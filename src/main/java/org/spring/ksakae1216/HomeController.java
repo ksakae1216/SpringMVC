@@ -46,7 +46,8 @@ public class HomeController {
 	//AWSのEC2のSQLserver接続サンプル
 	private void getDB() {
 		try { 
-		    Driver d = (Driver) Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver").newInstance(); 
+		    Driver d = (Driver) Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver").newInstance();
+		    	//IPアドレスはEC2再起動の度に変わります
 		        String connUrl = 
 		          "jdbc:sqlserver://54.173.251.222:1433;database=testdb;" 
 		            + "user=testuser;password=password"; 
