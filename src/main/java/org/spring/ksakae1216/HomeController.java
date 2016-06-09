@@ -70,4 +70,6 @@ public class HomeController {
 		      } 
 	}
 	
+	//コメントを追加
+	//将来、機能を追加する予定
 }
